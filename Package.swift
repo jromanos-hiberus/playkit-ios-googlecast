@@ -23,7 +23,7 @@ let package = Package(
         .target(
             name: "PlayKitGoogleCast",
             dependencies: [
-                "XCGLogger",
+                .product(name: "XCGLogger", package: "XCGLogger"),
                 .target(name: "GoogleCast")
             ],
             path: "Sources/"
